@@ -54,20 +54,45 @@
         margin-bottom: 15px;
       }
 
-      /* Styled Action Button for GitHub */
-      .github-link {
+      /* Custom Button Group Wrapper */
+      .button-group {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      /* Styled Action Buttons */
+      .btn {
         display: inline-block;
-        margin-top: 15px;
         padding: 12px 24px;
-        background-color: #2d3748;
-        color: #ffffff;
         text-decoration: none;
         border-radius: 6px;
         font-weight: 500;
-        transition: background-color 0.2s ease;
+        transition: background-color 0.2s ease, transform 0.1s ease;
       }
 
-      .github-link:hover {
+      .btn:active {
+        transform: scale(0.98);
+      }
+
+      /* Code.org / App Lab Style Button */
+      .btn-applab {
+        background-color: #00adbc;
+        color: #ffffff;
+      }
+
+      .btn-applab:hover {
+        background-color: #008c99;
+      }
+
+      /* GitHub Style Button */
+      .btn-github {
+        background-color: #2d3748;
+        color: #ffffff;
+      }
+
+      .btn-github:hover {
         background-color: #1a202c;
       }
     </style>
@@ -86,9 +111,17 @@
       <h2>My Goals for This Course</h2>
       <p>I want to learn how to build websites that can help people solve problems and stay connected.</p>
    
+      <h2>Featured Project</h2>
+      <p>Check out the application I built using Code.org's App Lab:</p>
+      <div class="button-group">
+        <a class="btn btn-applab" href="https://studio.code.org/projects/applab/im7i_c6_UpuLUMmd-EU05OPf1oK7Du7cM3Ahj6j7q6w" target="_blank">Launch App Lab Project</a>
+      </div>
+
       <h2>My GitHub</h2>
-      <p>Take a look at what I am building:</p>
-      <a class="github-link" href="https://github.com/TylerK365" target="_blank">View My GitHub Profile</a>
+      <p>Take a look at my code repositories and tracking progress:</p>
+      <div class="button-group">
+        <a class="btn btn-github" href="https://github.com" target="_blank">View My GitHub Profile</a>
+      </div>
     </div>
 
   </body>
