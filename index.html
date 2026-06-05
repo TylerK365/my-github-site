@@ -3,30 +3,93 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Tyler Keating]'s Website</title>
+    <title>Tyler Keating's Website</title>
     <style>
-      body { font-family: Arial, sans-serif; max-width: 800px;
-             margin: 0 auto; padding: 20px; background: #f5f5f5; }
-      h1   { color: #1F4E79; }
-      h2   { color: #2E75B6; border-bottom: 2px solid #2E75B6; }
-      p    { line-height: 1.6; }
+      /* Reset & Modern Base Setup */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body { 
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+        background-color: #f4f6f9; 
+        color: #333333;
+        line-height: 1.7; 
+        padding: 40px 20px;
+      }
+
+      /* Professional Profile Card Layout */
+      .container {
+        max-width: 650px; 
+        margin: 0 auto; 
+        background: #ffffff; 
+        padding: 40px; 
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Clean Typography Hierarchy */
+      h1 { 
+        color: #1a365d; 
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+        font-weight: 700;
+        border-bottom: 3px solid #3182ce;
+        padding-bottom: 10px;
+      }
+
+      h2 { 
+        color: #2c5282; 
+        font-size: 1.3rem;
+        margin-top: 25px;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      p { 
+        font-size: 1.05rem;
+        color: #4a5568;
+        margin-bottom: 15px;
+      }
+
+      /* Styled Action Button for GitHub */
+      .github-link {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 24px;
+        background-color: #2d3748;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: background-color 0.2s ease;
+      }
+
+      .github-link:hover {
+        background-color: #1a202c;
+      }
     </style>
   </head>
   <body>
-    <h1>Hi, I'm Tyler Keating!</h1>
- 
-    <h2>About Me</h2>
-    <p>I am a freashman in energy tech highschool. I play muiltipul sports including soccer and baseball.</p>
- 
-    <h2>My Interests</h2>
-    <p>I enjoy doing sports like baseball and soccer but i also really like music and video games.</p>
- 
-    <h2>My Goals for This Course</h2>
-    <p>I want to learn how to make a website to help people</p>
- 
-    <h2>My GitHub</h2>
-    <p>Check out my projects: 
-      <a href="https://github.com/TylerK365">Tyler Keating</a>
-    </p>
+
+    <div class="container">
+      <h1>Hi, I'm Tyler Keating!</h1>
+   
+      <h2>About Me</h2>
+      <p>I am a freshman at Energy Tech High School. I play multiple sports, including soccer and baseball.</p>
+   
+      <h2>My Interests</h2>
+      <p>I enjoy playing baseball and soccer, but I also really like music and video games.</p>
+   
+      <h2>My Goals for This Course</h2>
+      <p>I want to learn how to build websites that can help people solve problems and stay connected.</p>
+   
+      <h2>My GitHub</h2>
+      <p>Take a look at what I am building:</p>
+      <a class="github-link" href="https://github.com/TylerK365" target="_blank">View My GitHub Profile</a>
+    </div>
+
   </body>
 </html>
