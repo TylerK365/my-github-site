@@ -90,23 +90,12 @@
         margin-bottom: 15px;
       }
 
-      /* Mode Toggle Button Styling */
-      .theme-toggle {
-        background-color: var(--toggle-bg);
-        color: var(--toggle-text);
-        border: none;
-        padding: 8px 16px;
-        border-radius: 20px;
-        font-weight: 600;
-        cursor: pointer;
-        font-size: 0.9rem;
-      }
-
       /* Custom Button Group Wrapper */
       .button-group {
         display: flex;
         gap: 15px;
-        margin-top: 20px;
+        margin-top: 15px;
+        margin-bottom: 25px;
         flex-wrap: wrap;
       }
 
@@ -117,6 +106,7 @@
         text-decoration: none;
         border-radius: 6px;
         font-weight: 500;
+        transition: background-color 0.2s ease, transform 0.1s ease;
       }
 
       .btn:active {
@@ -142,12 +132,23 @@
       .btn-github:hover {
         background-color: #1a202c;
       }
+
+      /* Mode Toggle Button Styling */
+      .theme-toggle {
+        background-color: var(--toggle-bg);
+        color: var(--toggle-text);
+        border: none;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 0.9rem;
+      }
     </style>
   </head>
   <body>
 
     <div class="container">
-      <!-- Wrapped title and button together -->
       <div class="header-wrapper">
         <h1>Hi, I'm Tyler Keating!</h1>
         <button class="theme-toggle" id="themeButton" onclick="toggleTheme()">🌙 Dark Mode</button>
@@ -162,10 +163,11 @@
       <h2>My Goals for This Course</h2>
       <p>I want to learn how to build websites that can help people solve problems and stay connected.</p>
    
-      <h2>Featured Project</h2>
-      <p>Check out the application I built using Code.org's App Lab:</p>
+      <h2>My Featured Projects</h2>
+      <p>Check out the interactive applications I built using Code.org's App Lab:</p>
       <div class="button-group">
-        <a class="btn btn-applab" href="https://code.org" target="_blank">Launch App Lab Project</a>
+        <a class="btn btn-applab" href="https://code.org" target="_blank">Launch App Lab Project 1</a>
+        <a class="btn btn-applab" href="https://studio.code.org/projects/applab/1e5d80c2-0232-4b57-8811-1d3464f9bc38" target="_blank">Launch App Lab Project 2</a>
       </div>
 
       <h2>My GitHub</h2>
@@ -175,7 +177,6 @@
       </div>
     </div>
 
-    <!-- Script to handle switching logic -->
     <script>
       function toggleTheme() {
         const body = document.documentElement;
